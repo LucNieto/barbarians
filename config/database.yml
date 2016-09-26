@@ -17,6 +17,10 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  username: barbarians
+  password: password
+  host: localhost
+  port: 5432
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -24,7 +28,10 @@ default: &default
 development:
   <<: *default
   database: barbarians_development
-
+  username: barbarians
+  password: password
+  host: localhost
+  port: 5432
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -58,7 +65,10 @@ development:
 test:
   <<: *default
   database: barbarians_test
-
+  username: barbarians
+  password: password
+  host: localhost
+  port: 5432
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -82,4 +92,7 @@ production:
   <<: *default
   database: barbarians_production
   username: barbarians
-  password: <%= ENV['BARBARIANS_DATABASE_PASSWORD'] %>
+  password: password
+  host: localhost
+  port: 5432
+ # password: <%= ENV['BARBARIANS_DATABASE_PASSWORD'] %>

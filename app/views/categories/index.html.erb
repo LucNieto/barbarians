@@ -1,0 +1,12 @@
+<h1>Categorias</h1>
+
+<% @categories.each do |category| %>
+   <h2><%= link_to category.nombre_categoria, category%></h2>
+   <p>
+   <%= link_to "Editar", edit_category_path(category) %>
+   <%= link_to "Eliminar", category, :confirm => "Confirme que desea eliminar la categoria", :method => :delete %>
+   </p>
+   <hr />
+<% end %>
+
+<p><%= link_to "Nueva categoria", new_category_path %></p>
