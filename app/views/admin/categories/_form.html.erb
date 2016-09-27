@@ -1,10 +1,9 @@
-<h1>Editar categoria</h1>
-<%= form_for @category do |f| %>
+<%= form_for ["admin",@category] do |f| %>
   <p>
     <%= f.label :nombre_categoria %><br />
     <%= f.text_field :nombre_categoria %>
   </p>
   <p>
-    <%= f.submit "Actualizar" %>
+    <%= f.submit "crear" %>
   </p>
 <% end %>

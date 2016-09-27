@@ -1,0 +1,10 @@
+<h1>Crear una nueva categoria</h1>
+  <% if @category.errors.full_messages.any? %>
+<% @category.errors.full_messages.each do |m| %>
+<%= m if @category.errors.full_messages.first == m %>
+  <% end %>
+<% end %>
+
+<%= render "form" %>
+
+<%= link_to "Regresar", admin_categories_path %>
