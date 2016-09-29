@@ -96,4 +96,3 @@ production:
   password: <%= ENV['BARBARIANS_DATABASE_PASSWORD'] %>
   host: localhost
   port: 5432
-  password: <%= ENV['BARBARIANS_DATABASE_PASSWORD'] %>
