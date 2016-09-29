@@ -32,6 +32,7 @@ development:
   password: <%= ENV['DB_PASSWORD'] %>
   host: localhost
   port: 5432
+
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -95,4 +96,4 @@ production:
   password: <%= ENV['BARBARIANS_DATABASE_PASSWORD'] %>
   host: localhost
   port: 5432
- # password: <%= ENV['BARBARIANS_DATABASE_PASSWORD'] %>
+  password: <%= ENV['BARBARIANS_DATABASE_PASSWORD'] %>

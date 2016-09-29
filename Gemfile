@@ -20,7 +20,11 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-rails'
   gem 'pry-byebug'
+<<<<<<< HEAD
 gem 'figaro'
+=======
+  gem 'figaro'
+>>>>>>> f6d75f3b2dd2a6af5b4d9901bb80babff5f745d0
 end
 
 group :development do
