@@ -37,10 +37,12 @@ module Admin
       redirect_to admin_categories_path, :notice => "Categoria borrada"
     end
 
+    private
     def category_params
       params.require(:category).permit(:nombre_categoria)
     end
 
+    private
     def set_category
       @category = Category.find(params[:id])
     end
