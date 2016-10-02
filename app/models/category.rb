@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-  validates :nombre_categoria, presence: true, uniqueness: true
+  validates :nombre_categoria, :presence => { :message => " en blanco" }, :uniqueness => { :message => " repetida" }
 end

@@ -38,14 +38,13 @@ module Admin
     end
 
     private
-    def category_params
-      params.require(:category).permit(:nombre_categoria)
-    end
+      def category_params
+        params.require(:category).permit(:nombre_categoria)
+      end
 
-    private
-    def set_category
-      @category = Category.find(params[:id])
+      def set_category
+        @category = Category.find(params[:id])
+      end
     end
-  end
 end
 
