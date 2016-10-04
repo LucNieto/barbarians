@@ -1,5 +1,5 @@
 <h1>Editar etiquetas</h1>
-<%= render 'partials/error_messages'%>
+<%= render 'partials/error_messages', object: @label %>
 <%= render "form" %>
 <%= link_to "Volver", admin_labels_path %>
  <%= link_to "Eliminar", admin_label_path(@label), :confirm => "Confirme que desea eliminar la etiqueta", :method => :delete %>

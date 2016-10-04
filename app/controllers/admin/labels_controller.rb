@@ -39,7 +39,7 @@ module Admin
 
     private
       def label_params
-        params.require(:label).permit(:nombre_de_eqiqueta)
+        params.require(:label).permit(:nombre_de_etiqueta)
       end
 
       def set_label
