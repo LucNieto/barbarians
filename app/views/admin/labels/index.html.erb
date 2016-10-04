@@ -1,0 +1,12 @@
+<h1>Etiquetas</h1>
+<% @labels.each do |label| %>
+   <h2><%= link_to label.nombre_de_etiqueta, admin_label_path(label) %></h2>
+   <p>
+   <%= link_to "Editar", edit_admin_label_path(label) %>
+   <%= link_to "Eliminar", admin_label_path(label), :confirm => "Confirme que desea eliminar la etiqueta", :method => :delete %>
+   </p>
+   <hr />
+<% end %>
+<p><%= link_to "Nueva etiqueta", new_admin_label_path %></p>
+<p></p>
+  <%= render 'partials/notice_messages' %>

@@ -1,0 +1,9 @@
+<%= form_for ["admin",@label] do |f| %>
+  <p>
+    <%= f.label "Etiqueta" %><br />
+    <%= f.text_field :nombre_de_etiqueta %>
+  </p>
+  <p>
+    <%= f.submit "crear" %>
+  </p>
+<% end %>

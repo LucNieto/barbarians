@@ -1,2 +1,2 @@
-DB_USERNAME: "vagrant"
-DB_PASSWORD: "vagrant"
+DB_USERNAME: "barbarians"
+DB_PASSWORD: "password"
