@@ -1,2 +1,2 @@
-DB_USERNAME: "vagrant"
+DB_USERNAME: "postgres"
 DB_PASSWORD: "vagrant"
