@@ -1,4 +1,4 @@
-
 <p><%= @category.nombre_categoria %></p>
 <small><%= @category.created_at %></small>
 <p><%= link_to "Volver", admin_categories_path %></p>
+<%= link_to "Eliminar", admin_category_path(category), :confirm => "Confirme que desea eliminar la categoria", :method => :delete %>
