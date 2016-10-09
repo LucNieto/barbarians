@@ -17,6 +17,10 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: localhost
+  port: 5432
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -24,8 +28,8 @@ default: &default
 development:
   <<: *default
   database: barbarians_development
-  username: barbarians
-  password: password
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
   host: localhost
   port: 5432
   # The specified database role being used to connect to postgres.
@@ -61,8 +65,8 @@ development:
 test:
   <<: *default
   database: barbarians_test
-  username: barbarians
-  password: password
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
   host: localhost
   port: 5432
 
@@ -88,8 +92,8 @@ test:
 production:
   <<: *default
   database: barbarians_production
-  username: barbarians
-  password: password
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['BARBARIANS_DATABASE_PASSWORD'] %>
   host: localhost
   port: 5432
-  #password: <%= ENV['BARBARIANS_DATABASE_PASSWORD'] %>
+
