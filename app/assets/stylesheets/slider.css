@@ -14,7 +14,7 @@
     /* size of bullet elment */
     width: 16px;
     height: 16px;
-    background: url('/assets/slider/b05.png') no-repeat;
+    background: url('/images/slider/b05.png') no-repeat;
     overflow: hidden;
     cursor: pointer;
 }
@@ -39,7 +39,7 @@
     width: 40px;
     height: 58px;
     cursor: pointer;
-    background: url('/assets/slider/a22.png') center center no-repeat;
+    background: url('/images/slider/a22.png') center center no-repeat;
     overflow: hidden;
 }
 .jssora22l { background-position: -10px -31px; }
