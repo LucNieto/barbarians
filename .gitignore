@@ -17,4 +17,4 @@
 .byebug_history
 
 # Custom ignore
-config/application.yml
+/config/application.yml
