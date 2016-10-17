@@ -1,7 +1,7 @@
 module Admin
     class LabelsController < ApplicationController
         before_action :set_label, only: [:edit, :show, :update, :destroy]
-        before_filter :authenticate_labels!
+        before_filter :authenticate_user!
       def index
         @labels = Label.all
       end

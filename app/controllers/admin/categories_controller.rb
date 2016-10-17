@@ -1,7 +1,7 @@
 module Admin
     class CategoriesController < ApplicationController
         before_action :set_category, only: [:edit, :show, :update, :destroy]
-        before_filter :authenticate_users!
+        before_filter :authenticate_user!
         #http_basic_authenticate_with :name => ENV['ADMIN_USERNAME'], :password => ENV['ADMIN_PASSWORD']
       def index
         @categories = Category.all
