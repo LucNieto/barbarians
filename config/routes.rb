@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    get 'welcome/index'
+  end
+
   devise_for :users
   namespace :admin do
     resources :labels
