@@ -4,15 +4,13 @@
    <h2>
     <%= link_to category.nombre_categoria, admin_category_path(category) %>
    </h2>
-   <div class="pull-right">
-   <%= link_to "Mostrar", admin_category_path(category),class: "btn btn-primary" %>
-   <%= link_to "Editar", edit_admin_category_path(category), class: "btn btn-success" %>
-   <%= link_to "Eliminar", admin_category_path(category), class: "btn btn-danger", method: :delete, data: { confirm: 'Estas seguro de eliminar la categoría?' } %>
-   </div>
-  <hr />
+     <div class="pull-right">
+       <%= link_to "Mostrar", admin_category_path(category),class: "btn btn-primary" %>
+      <%= link_to "Editar", edit_admin_category_path(category), class: "btn btn-success" %>
+      <%= link_to "Eliminar", admin_category_path(category), class: "btn btn-danger", method: :delete, data: { confirm: 'Estas seguro de eliminar la categoría?' } %>
+    </div>
  </div>
-  <hr />
+<hr />
 <% end %>
- <hr />
 <p><%= link_to "Nueva categoria", new_admin_category_path, class: "btn btn-default btn-lg active" %></p>
 <p><%= link_to "Nueva etiqueta", new_admin_label_path,class: "btn btn-default btn-lg active" %></p>
