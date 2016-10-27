@@ -1,3 +1,6 @@
-<h1>Productos</h1>
+<p><%= @product.producto %></p>
 <%= image_tag(@product.image.url(:medium)) %>
+<p>
 <%= @product.descripcion %>
+</p>
+<small><%= @product.created_at %></small>
