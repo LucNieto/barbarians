@@ -28,7 +28,7 @@ module Admin
 
       def update
         if @category.update_attributes(category_params)
-          redirect_to admin_categories_path, :notice => "Categoria actualizada"
+          redirect_to admin_categories_path, :notice => "Categoria actualizada", class: "alert alert-info",role: "alert"
         else
           render "edit"
         end

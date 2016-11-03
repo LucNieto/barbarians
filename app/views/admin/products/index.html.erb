@@ -1,2 +1,17 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<h1>Productos</h1>
+<% @products.each do |product| %>
+ <div class="form-group">
+   <h2>
+    <%= link_to product.producto, admin_product_path(product) %>
+   </h2>
+     <div class="pull-right">
+       <%= link_to "Mostrar", admin_product_path(product),class: "btn btn-primary" %>
+       <%= link_to "Editar", edit_admin_product_path(product), class: "btn btn-success" %>
+       <%= link_to "Eliminar", admin_product_path(product), class: "btn btn-danger", method: :delete, data: { confirm: 'Estas seguro de eliminar la categoría?' } %>
+    </div>
+ </div>
+ <br>
+  <hr />
+<% end %>
+<p><%= link_to "Nuevo producto", new_admin_product_path, class: "btn btn-warning" %></p>
+
