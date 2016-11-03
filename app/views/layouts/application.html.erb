@@ -16,8 +16,14 @@
 
     <%= render 'layouts/template/navbar' %>
     <%= yield %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice.present? || alert.present? %>
+
+     <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Mensaje! </strong> <%= notice %>
+      </div>
+    <% end %>
+
 
   </body>
 </html>
