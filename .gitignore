@@ -18,3 +18,4 @@
 
 # Custom ignore
 /config/application.yml
+/public/system/*
