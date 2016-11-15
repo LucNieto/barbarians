@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: one
+  producto: MyString
+  codigo_producto: MyString
+  descripcion: MyText
+  votos: 1
+
+two:
+  category: two
+  producto: MyString
+  codigo_producto: MyString
+  descripcion: MyText
+  votos: 1
