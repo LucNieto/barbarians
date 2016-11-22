@@ -1,17 +1,31 @@
 <%= render 'partials/notice_messages', object: @product %>
-      <%= form_for ["admin",@product],  html: { multipart: true } do |f| %>
+      <%= form_for ["admin",@product],  html: { multipart: true , class: "form-horizontal"} do |f| %>
         <p>
           <h3>
             <%= f.label "Imagen", class: "label label-default" %>
           </h3>
             <%= f.file_field :image %>
         </p>
+        <div class="form-group">
+            <%= f.label "Imagen", class: "control-label col-lg-6 col-md-6"  %>
+            <div class="col-lg-6 col-md-6">
+               <%= f.file_field :image , class: "form-control"%>
+            </div>
+        </div>
+
         <p>
           <h3>
-            <%= f.label "Producto" , class: "label label-default" %><br />
+            <%= f.label "Producto" , class: "label label-default " %><br />
           </h3>
             <%= f.text_field :producto %>
         </p>
+
+        <div class="form-group">
+            <%= f.label "producto", class: "control-label col-lg-6 col-md-6"  %>
+            <div class="col-lg-6 col-md-6">
+               <%= f.text_field :producto , class: "form-control"%>
+            </div>
+        </div>
         <p>
           <h3>
             <%= f.label "Categoria", class: "label label-default" %><br />

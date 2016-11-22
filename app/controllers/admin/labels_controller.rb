@@ -1,5 +1,6 @@
 module Admin
     class LabelsController < ApplicationController
+        layout "admin_layout"
         before_action :set_label, only: [:edit, :show, :update, :destroy]
         before_filter :authenticate_user!
       def index
