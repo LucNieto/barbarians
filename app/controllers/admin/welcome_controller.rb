@@ -1,5 +1,5 @@
 class Admin::WelcomeController < ApplicationController
-  layout "admin_interface"
+  layout "admin_layout"
   def index
   end
 end
