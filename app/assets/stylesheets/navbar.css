@@ -1,16 +1,32 @@
+/******************************************************************************
+*                   Estructura de Estilos General: application.html           *
+******************************************************************************/
 body{
   background-color: #D6CCDE;
-  padding-bottom: 1000px;
 }
+/******************************************************************************
+*                   Estructura de Estilos: _navbar.html                       *
+******************************************************************************/
 .nvstyle{
   margin-bottom: 0px;
 }
   .imgstyle{
-   margin-top: -12px;
+    margin-top: -12px;
   }
   .imglogo{
     width: 45px; height: 45px;
   }
   .imglema{
     width: 90px; height: 50px;
+  }
+/******************************************************************************
+*                   Estructura de Estilos: _socialmedia.html                  *
+******************************************************************************/
+.socialmedia{
+  padding: 5px 16% 5px 15%;
+  background-color: black;
+  text-align: center;
+}
+  .iconresp{
+    padding-left: 10%;
   }

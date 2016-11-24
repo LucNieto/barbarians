@@ -1,0 +1,20 @@
+
+.a-star-5 {
+    background-position: -5px -368px;
+}
+.a-icon-star {
+    width: 80px;
+    height: 18px;
+}
+.a-icon-star, .a-icon-star-medium, .a-icon-star-mini, .a-icon-star-small {
+    position: relative;
+    vertical-align: text-top;
+}
+.a-icon, .a-link-emphasis::after {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+    -webkit-background-size: 400px 670px;
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
