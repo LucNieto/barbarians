@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-
-
-
-  devise_for :users
   namespace :admin do
+    get 'welcome/index'
+  end
+    devise_for :users
+    namespace :admin do
     resources :labels
     resources :categories
     resources :products

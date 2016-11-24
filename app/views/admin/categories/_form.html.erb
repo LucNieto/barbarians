@@ -1,11 +1,15 @@
-<%= render 'partials/notice_messages', object: @category %>
+<center>
+  <%= render 'partials/notice_messages', object: @category %>
 
-<%= form_for ["admin",@category] do |f| %>
+  <%= form_for ["admin",@category] do |f| %>
   <p>
-    <%= f.label "Categoria" %><br />
+  <h3>
+    <%= f.label "Categoria",class: "label label-default"  %> <br>
+  </h3>
     <%= f.text_field :nombre_categoria %>
   </p>
   <p>
     <%= f.submit "crear" %>
   </p>
-<% end %>
+  <% end %>
+</center>
