@@ -17,6 +17,7 @@ gem 'mini_magick'
 gem 'faker'
 gem 'bootstrap-sass'
 gem "paperclip", "~> 5.0.0"
+gem "chosen-rails"
 
 group :development, :test do
   gem 'byebug', platform: :mri
