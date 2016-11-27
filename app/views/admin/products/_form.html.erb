@@ -35,7 +35,7 @@
         </p>
         <div class="field">
           <%= f.label "Etiqueta"%>
-          <%= f.collection_select :etiquetas, Label.order(:nombre_de_etiqueta), :id, :nombre_de_etiqueta %>
+          <%= f.collection_select :producto_etiquetas, Label.order(:nombre_de_etiqueta), :id, :nombre_de_etiqueta, {}, {multiple: true} %>
         </div>
         <p>
           <%= f.submit "crear", class: "btn btn-primary" %>
