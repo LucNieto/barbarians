@@ -1,2 +1,13 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<h1>Productos</h1>
+<% @products.each do |product| %>
+ <div class="form-group">
+   <h2>
+    <%= link_to product.producto, admin_product_path(product) %>
+   </h2>
+     <div class="pull-right">
+
+    </div>
+ </div>
+ <br>
+  <hr />
+<% end %>
