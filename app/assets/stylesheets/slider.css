@@ -1,3 +1,8 @@
+/*#cde01f
+rgb(205, 224, 31)
+
+#bed11b
+rgb(190, 209, 27)*/
 /******************************************************************************
 *                   Estructura de Estilos Slider: slider.html                 *
 *                               Textos Slider Index                           *
@@ -24,7 +29,6 @@ position: absolute; top: 110px; left: 818px;
 position: absolute; top: 170px; left: 865px; font-size: 35px;
 }
 /******************************************************************************
-*                   Estructura de Estilos Slider: slider.html                 *
 *                               Textos Slider Ingles                          *
 ******************************************************************************/
 .crsIn1{
@@ -38,7 +42,6 @@ text-shadow: #555 3px 3px 4px;
 position: absolute; top: 210px; left: -470px; font-size: 30px;
 }
 /******************************************************************************
-*                   Estructura de Estilos Slider: slider.html                 *
 *                               Textos Slider Electronica                     *
 ******************************************************************************/
 .crsElc1{
