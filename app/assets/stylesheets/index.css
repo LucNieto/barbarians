@@ -2,7 +2,7 @@
 *                   Estructura de Estilos: index.html                         *
 *  DivLine:5    Background Logo-lema Texto Index                              *
 ******************************************************************************/
-.body_color{/*background-color: #C6FF5B;*/background:rgba(255, 23, 23, 0.8);}
+.body_color{background:rgba(255, 23, 23, 0.7);}
 @import url('https://fonts.googleapis.com/css?family=Sumana');
 .scp1 {
     background-color: white;
@@ -26,10 +26,10 @@
         text-shadow: #555 4px 4px 5px;
     }
 /******************************************************************************
-*  DivLine:12              Textos Div Logo-lema Index                         *
+*  DivLine:12              Textos Div Componentes Index                       *
 ******************************************************************************/
 .scp2-color{ background-color: #bbdef0; display: inherit;}
-.scp2-img{
+.scp2-img {
     padding-top: 10px;
 }
     .scp2-imgcnt{
@@ -43,27 +43,58 @@
         border-radius: 50%;
         background-size: 100% auto;
     }
-    .scp2-text {
-        width: 74%;
-        margin-left: 13%;
-        margin-right: 13%;
-        color: black;
-        padding-bottom: 10px;
-    }
-
+.scp2-text {
+    width: 74%;
+    margin-left: 13%;
+    margin-right: 13%;
+    color: black;
+    padding-bottom: 10px;
+}
+.scp3-color{ background-color: #C6FF5B;}
 /******************************************************************************
 *                          Textos Div Logo-lema Index                         *
 ******************************************************************************/
-.scp3-color{ background-color: #C6FF5B;}
-
-
-.scp4{
+.scp4-logo {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+    .scp4-text{
+        height: 45px;
+        width: 180px;
+        color: white;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -16px;
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .scp4-h{margin-top: -4px;}
+.cat-aling{
+    margin-top: 40px;
+}
+.p-style{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    background-color: red;
+    color: white;
+}
 /******************************************************************************
 *                          Estilos Links Componentes                          *
 ******************************************************************************/
-.a:link    {color:#2E49D9; background-color:transparent; text-decoration:none}
-.a:visited {color:#B105E8; background-color:transparent; text-decoration:none}
-.a:hover   {color:#FF4734; background-color:transparent; text-decoration:underline}
-.a:active  {color:#000000; background-color:transparent; text-decoration:underline}
+.a_ind:link    {color:#2E49D9; background-color:transparent; text-decoration:none}
+.a_ind:visited {color:#B105E8; background-color:transparent; text-decoration:none}
+.a_ind:hover   {color:#FF4734; background-color:transparent; text-decoration:underline}
+.a_ind:active  {color:#000000; background-color:transparent; text-decoration:underline}
+
