@@ -5,8 +5,8 @@ class Product < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
 
-  has_many :etiquetas
-  has_many :labels, through: :etiquetas
+  has_many :label_products
+  has_many :labels, :through => :label_products
 
   def etiquetas
 
