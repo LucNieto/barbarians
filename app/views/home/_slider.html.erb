@@ -13,12 +13,8 @@
                     <span class="text-1">y nosotros somos</span>
                     <span class="text-4"><b>asombrosos</b></span>
                 </p>
-                <%= link_to pgstatics_contacts_path do %>
-                <button type="button" class="btn btn-default btn-stylcss"><b>Contactanos</b></button>
-                <% end %>
-                <%= link_to pgstatics_aboutus_path do %>
-                <button type="button" class="btn btn-default btn-stylcss1"><b>Acerca de <br>Nosotros</b></button>
-                <% end %>
+                <%= link_to "<b>Contactanos</b>".html_safe, pgstatics_aboutus_path, class: "btn btn-default btn-stylcss" %>
+                <%= link_to "<b>Acerca de <br> nosotros</b>".html_safe, pgstatics_aboutus_path, class: "btn btn-default btn-stylcss1" %>
             </div>
         </div>
         <div data-p="225.00" style="display: none;">
