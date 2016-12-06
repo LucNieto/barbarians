@@ -1,20 +1,99 @@
-
-.a-star-5 {
-    background-position: -5px -368px;
+/******************************************************************************
+*                   Estructura de Estilos: index.html                         *
+*   Background Logo-lema Texto Index                                          *
+******************************************************************************/
+.body_color{background:rgba(255, 23, 23, 0.7);}
+@import url('https://fonts.googleapis.com/css?family=Sumana');
+.scp1 {
+    background-color: white;
+    height: 300px;
 }
-.a-icon-star {
-    width: 80px;
-    height: 18px;
+    .scp1-log{
+        width: 60px;
+        height: 60px;
+        margin-left: 43%;
+        margin-top: 60px;
+    }
+    .scp1-lema{
+        width: 110px;
+        height: 70px;
+        margin-top: 60px;
+    }
+    .scp1-text{
+        color: black;
+        text-align: center;
+        font-family: 'Sumana', serif;
+        text-shadow: #555 4px 4px 5px;
+    }
+/******************************************************************************
+*                     Textos Div Componentes Index                            *
+******************************************************************************/
+.scp2-color{ background-color: #bbdef0; display: inherit;}
+.scp2-img {
+    padding-top: 10px;
 }
-.a-icon-star, .a-icon-star-medium, .a-icon-star-mini, .a-icon-star-small {
-    position: relative;
-    vertical-align: text-top;
+    .scp2-imgcnt{
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: 100% auto;
+    }
+.scp2-text {
+    width: 74%;
+    margin-left: 13%;
+    margin-right: 13%;
+    color: black;
+    padding-bottom: 10px;
 }
-.a-icon, .a-link-emphasis::after {
-    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
-    -webkit-background-size: 400px 670px;
-    background-size: 400px 670px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    vertical-align: top;
+.scp3-color{ background-color: #C6FF5B;}
+/******************************************************************************
+*                          Textos Div Logo-lema Index                         *
+******************************************************************************/
+.scp4-logo {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
+    .scp4-text{
+        height: 45px;
+        width: 180px;
+        color: white;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -16px;
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .scp4-h{margin-top: -4px;}
+.cat-aling{
+    margin-top: 40px;
+}
+.p-style{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    background-color: red;
+    color: white;
+}
+/******************************************************************************
+*                          Estilos Links Componentes                          *
+******************************************************************************/
+.a_ind:link    {color:#2E49D9; background-color:transparent; text-decoration:none}
+.a_ind:visited {color:#B105E8; background-color:transparent; text-decoration:none}
+.a_ind:hover   {color:#FF4734; background-color:transparent; text-decoration:underline}
+.a_ind:active  {color:#000000; background-color:transparent; text-decoration:underline}

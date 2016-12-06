@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Welcome</title>
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="welcome.scss" rel="stylesheet">
+
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  </head>
+  <body>
+  <div class="jumbotron">
+  <h1>Bienvenidos Barbaros!</h1>
+  <p>Ahora estas en la interface administrativa, podras modificar el contenido de la página principal, ten cuidado, la información y los elementos que cambies seran modificados y vistos por los visitantes</p>
+</div>
+<div>
+<p><%= link_to "Categorias", admin_categories_path, class: "btn btn-default btn-lg active" %> <%= link_to "Etiquetas", admin_labels_path,class: "btn btn-default btn-lg active" %> <%= link_to "Productos", admin_products_path, class: "btn btn-default btn-lg active" %></p>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

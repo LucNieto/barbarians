@@ -1,5 +1,67 @@
 /******************************************************************************
 *                   Estructura de Estilos Slider: slider.html                 *
+*                      Textos Slider About Us-Contacs                         *
+******************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+@import url('https://fonts.googleapis.com/css?family=Simonetta');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+.text-div{
+    height: 200px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 35px;
+}
+.text-1{
+    font-family: 'Marcellus SC', serif;
+    font-size: 38px;
+    color: white;
+    text-shadow: #555 4px 4px 5px;
+}
+    .text-2{
+        font-family: 'Simonetta', cursive;
+        font-size: 60px;
+        color: #bed11b;
+        text-shadow: none;
+    }
+    .text-3{
+        font-family: 'Marcellus SC', serif;
+        font-size: 38px;
+        color: white;
+        text-shadow: #555 4px 4px 5px;
+    }
+    .text-4{
+        font-family: 'Bowlby One SC', cursive;
+        font-size: 52px;
+        color: #bed11b ;
+        text-shadow: none;
+    }
+.btn-stylcss{
+    height: 60px;
+    width: 118px;
+    padding-top: 15px;
+    padding-left: -25px;
+    margin-top: 85px;
+    margin-right: 15px;
+    border: 3px solid #bed11b;
+    border-radius: 5px;
+    background-color: black;
+    color: #bed11b;
+    text-shadow: none;
+}
+.btn-stylcss1{
+    height: 60px;
+    width: 118px;
+    margin-left: 15px;
+    margin-top: 85px;
+    border: 3px solid #bed11b;
+    border-radius: 5px;
+    background-color: #bed11b;
+    color: black;
+    text-shadow: none;
+}
+/******************************************************************************
 *                               Textos Slider Index                           *
 ******************************************************************************/
 .sldIndx1{
@@ -24,7 +86,6 @@ position: absolute; top: 110px; left: 818px;
 position: absolute; top: 170px; left: 865px; font-size: 35px;
 }
 /******************************************************************************
-*                   Estructura de Estilos Slider: slider.html                 *
 *                               Textos Slider Ingles                          *
 ******************************************************************************/
 .crsIn1{
@@ -38,7 +99,6 @@ text-shadow: #555 3px 3px 4px;
 position: absolute; top: 210px; left: -470px; font-size: 30px;
 }
 /******************************************************************************
-*                   Estructura de Estilos Slider: slider.html                 *
 *                               Textos Slider Electronica                     *
 ******************************************************************************/
 .crsElc1{

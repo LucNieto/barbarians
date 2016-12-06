@@ -1,5 +1,6 @@
  module Admin
   class ProductsController < ApplicationController
+      layout "admin_layout"
       before_action :set_product, only: [:edit, :show, :update, :destroy]
       before_filter :authenticate_user!
     def index

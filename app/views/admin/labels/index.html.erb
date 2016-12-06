@@ -2,11 +2,9 @@
 <% @labels.each do |label| %>
    <h2><%= link_to label.nombre_de_etiqueta, admin_label_path(label) %></h2>
    <p>
-   <%= link_to "Editar", edit_admin_label_path(label) %>
-   <%= link_to "Eliminar", admin_label_path(label), :confirm => "Confirme que desea eliminar la etiqueta", :method => :delete %>
+   <%= link_to "Mostrar", admin_label_path(label),class: "btn btn-primary" %>
+   <%= link_to "Editar", edit_admin_label_path(label), class: "btn btn-success" %>
+   <%= link_to "Eliminar", admin_label_path(label), class: "btn btn-danger",method: :delete, data: { confirm: 'Estas seguro de eliminar la etiqueta?' } %>
    </p>
    <hr />
 <% end %>
-<p><%= link_to "Nueva etiqueta", new_admin_label_path %></p>
-<p><%= link_to "Nueva categoria", new_admin_category_path %></p>
-  <%= render 'partials/notice_messages' %>

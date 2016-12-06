@@ -8,8 +8,11 @@ Rails.application.routes.draw do
 
   get 'products/index'
 
-  devise_for :users
   namespace :admin do
+    get 'welcome/index'
+  end
+    devise_for :users
+    namespace :admin do
     resources :labels
     resources :categories
     resources :products
