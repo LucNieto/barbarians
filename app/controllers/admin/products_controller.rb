@@ -38,11 +38,12 @@
 
     private
         def product_params
-          params.require(:product).permit(:category_id, :producto, :image, :codigo_producto, :descripcion, :votos )
+          params.require(:product).permit(:category_id, :producto, :image, :codigo_producto, :descripcion, :votos, :product_label_ids )
         end
 
         def set_product
           @product = Product.find(params[:id])
+
         end
 
     def edit
