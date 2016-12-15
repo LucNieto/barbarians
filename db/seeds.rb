@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+include Faker
+
+20.times do
+  Label.create!(nombre_de_etiqueta: "#{Name.last_name}")
+end
