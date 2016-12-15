@@ -1,0 +1,5 @@
+<% if current_user.like?(product) %>
+  <%= button_to "No me gusta", unlike_path(product_id: product.id), remote: true, method: :delete  %>
+<% else %>
+  <%= button_to "Me gusta", like_path(product_id: product.id), remote: true  %>
+<% end %>

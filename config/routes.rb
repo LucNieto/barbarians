@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-
+  match 'like', to: 'likes#like', via: :product
+  match 'unlike', to: 'likes#unlike', via: :delete
+  resources :likes
   get 'pgstatics/aboutus'
 
   get 'pgstatics/contacts'

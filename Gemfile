@@ -17,6 +17,7 @@ gem 'mini_magick'
 gem 'faker'
 gem 'bootstrap-sass'
 gem "paperclip", "~> 5.0.0"
+gem 'record_tag_helper', '~> 1.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -37,4 +38,4 @@ group :production do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'devise'
+
