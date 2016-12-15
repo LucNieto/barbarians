@@ -5,7 +5,7 @@ class Product < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
   #has_and_belongs_to_many :labels
-  has_many :labelings
+  has_many :labelings, :dependent => :destroy, :autosave => true , :inverse_of => :product
   has_many :labels, through: :labelings
 end
 
