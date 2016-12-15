@@ -1,10 +1,19 @@
 
 
-
+<div>
 <% @products.each do |product| %>
-  <% product.producto %>
-    <% product.producto %>
+  <p>
+    <%= image_tag(product.image.url(:medium) )%>
+  </p>
+  <p>
+    <%= product.producto %>
+  </p>
+  <p>
+    <%= product.descripcion %>
+  </p>
   <%= div_for product do %>
      <%= render partial: 'likes/button', locals: { product: product } %>
+     <p> <br></p>
   <% end %>
 <% end %>
+</div>
