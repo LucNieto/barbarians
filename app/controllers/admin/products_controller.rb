@@ -15,6 +15,7 @@
     end
 
     def create
+        #binding.pry
         @product = Product.new(product_params)
         if @product.save
           redirect_to ["admin",@product], :notice => "Producto creado",class: "alert alert-success"
@@ -38,11 +39,12 @@
 
     private
         def product_params
-          params.require(:product).permit(:category_id, :producto, :image, :codigo_producto, :descripcion, :votos )
+          params.require(:product).permit(:category_id, :producto, :image, :codigo_producto, :descripcion, :votos, label_ids: [])
         end
 
         def set_product
           @product = Product.find(params[:id])
+
         end
 
     def edit
